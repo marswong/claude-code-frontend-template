@@ -14,7 +14,7 @@
         <img src="/serve.svg" class="logo serve" alt="serve logo" />
       </a>
     </div>
-    <h1 class="text-4xl">{{ msg }}</h1>
+    <h1 class="text-4xl mb-4">{{ msg }}</h1>
     <p class="read-the-docs">Click on the logos to learn more</p>
   </div>
 </template>
