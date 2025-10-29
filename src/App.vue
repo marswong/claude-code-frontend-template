@@ -1,46 +1,46 @@
 <template>
-  <div class="flex justify-between items-center">
-    <a href="https://vite.dev" target="_blank">
-      <img src="./assets/vite.svg" class="logo" alt="vite logo" />
-    </a>
-    <a href="https://vuejs.org" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="vue logo" />
-    </a>
-    <a href="https://daisyui.com" target="_blank">
-      <img src="./assets/daisyui.svg" class="logo daisyui" alt="daisyui logo" />
-    </a>
-    <a href="https://github.com/vercel/serve" target="_blank">
-      <img src="/serve.svg" class="logo serve" alt="serve logo" />
-    </a>
-  </div>
-  <HelloWorld msg="vite + vue + daisyui + serve" />
+  <header class="flex justify-between items-center h-16">
+    <RouterLink to="/">
+      <img alt="Vue logo" class="logo" src="./assets/vue.svg" />
+    </RouterLink>
+
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+    </nav>
+  </header>
+
+  <RouterView />
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue';
+import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <style scoped>
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  cursor: pointer;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+nav a.router-link-exact-active {
+  color: #41B883;
 }
 
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
 }
 
-.logo.daisyui:hover {
-  filter: drop-shadow(0 0 2em #FFD819aa);
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
 }
 
-.logo.serve:hover {
-  filter: drop-shadow(0 0 2em #000000aa);
+nav a:first-of-type {
+  border: 0;
+}
+
+nav a:hover {
+  color: #41B883;
 }
 </style>
