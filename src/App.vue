@@ -1,7 +1,7 @@
 <template>
-  <header class="flex justify-between items-center h-16">
+  <header class="flex justify-between items-center h-16 px-10">
     <RouterLink to="/">
-      <img alt="Vue logo" class="logo" src="./assets/vue.svg" />
+      <img alt="Vue logo" class="logo" src="@/assets/vue.svg" />
     </RouterLink>
 
     <nav>
@@ -20,5 +20,14 @@ import { RouterLink, RouterView } from 'vue-router';
 <style scoped>
 .logo {
   cursor: pointer;
+}
+
+nav a:first-child {
+  margin-right: 1rem;
+}
+
+nav a.router-link-exact-active,
+nav a:hover {
+  color: #41B883;
 }
 </style>

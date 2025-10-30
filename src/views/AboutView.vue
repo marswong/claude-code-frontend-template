@@ -1,8 +1,5 @@
 <template>
   <main>
-    <p>This is an about page</p>
+    <p class="text-center">This is About page</p>
   </main>
 </template>
-
-<style scoped>
-</style>

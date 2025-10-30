@@ -24,7 +24,7 @@ npm run serve -- -l 1989
 
 ## Philosophy
 
-- To avoid unknown issues, only use `vite`, `vue`, `vue-router`, `tailwindcss` and `serve`, don't introduce any other package
+- To avoid unknown issues, only use `vite`, `vue`, `vue-router`, `tailwindcss@3` and `serve`, don't introduce any other package
 - Build for model `claude-sonnet-4-5-20250929`, so all package versions and documentations should be published before the date `20250929`
 
 ## Reference
@@ -32,5 +32,5 @@ npm run serve -- -l 1989
 - [vite](https://vite.dev)
 - [vue](https://vuejs.org)
 - [vue-router](https://router.vuejs.org)
-- [tailwindcss](https://tailwindcss.com)
+- [tailwindcss](https://v3.tailwindcss.com)
 - [serve](https://github.com/vercel/serve)
